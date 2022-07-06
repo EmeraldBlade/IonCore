@@ -136,7 +136,6 @@ import net.starlegacy.feature.transport.Wires
 import net.starlegacy.feature.transport.pipe.Pipes
 import net.starlegacy.feature.transport.pipe.filter.Filters
 import net.starlegacy.listener.SLEventListener
-import net.starlegacy.listener.gear.BlasterListener
 import net.starlegacy.listener.gear.DetonatorListener
 import net.starlegacy.listener.gear.DoubleJumpListener
 import net.starlegacy.listener.gear.PowerArmorListener
@@ -293,7 +292,6 @@ class StarLegacy : JavaPlugin() {
 			InventoryListener,
 			BowHitListener,
 
-			BlasterListener,
 			DetonatorListener,
 			DoubleJumpListener,
 			PowerArmorListener,
