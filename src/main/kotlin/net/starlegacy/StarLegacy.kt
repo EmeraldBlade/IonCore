@@ -69,8 +69,6 @@ import net.starlegacy.database.schema.economy.EcoStation
 import net.starlegacy.database.schema.misc.Shuttle
 import net.starlegacy.database.schema.starships.Blueprint
 import net.starlegacy.database.slPlayerId
-import net.starlegacy.feature.chat.ChannelSelections
-import net.starlegacy.feature.chat.ChatChannel
 import net.starlegacy.feature.economy.bazaar.Bazaars
 import net.starlegacy.feature.economy.bazaar.Merchants
 import net.starlegacy.feature.economy.cargotrade.CrateRestrictions
@@ -143,7 +141,6 @@ import net.starlegacy.listener.gear.PowerArmorListener
 import net.starlegacy.listener.gear.PowerToolListener
 import net.starlegacy.listener.gear.SwordListener
 import net.starlegacy.listener.misc.BlockListener
-import net.starlegacy.listener.misc.ChatListener
 import net.starlegacy.listener.misc.EntityListener
 import net.starlegacy.listener.misc.FurnaceListener
 import net.starlegacy.listener.misc.InteractListener
@@ -204,9 +201,6 @@ class StarLegacy : JavaPlugin() {
 			PlayerXPLevelCache,
 			Levels,
 			SLXP,
-
-			ChannelSelections,
-			ChatChannel.ChannelActions,
 
 			CombatNPCs,
 
@@ -281,7 +275,6 @@ class StarLegacy : JavaPlugin() {
 	private val listeners: List<SLEventListener>
 		get() = listOf(
 			JoinLeaveListener,
-			ChatListener,
 			MovementListener,
 			FriendlyFireListener,
 			ProtectionListener,
